@@ -1,6 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Header = () => {
+    const [activeNavbar, setactiveNavbar] = useState("");
+    let burgerClicked = () =>{
+        setactiveNavbar('navbarActivated')
+    }
+    let closeClicked = () =>{
+        setactiveNavbar('')
+
+    }
     return (
         <>
         <div className="header parent">
@@ -11,7 +19,9 @@ const Header = () => {
             <div className="child headerC">
                 <div className="aSide">
                 <div className="logo"><img src="/images/logo_full.png" alt="Logo" /></div>
-                <nav>
+                <div className="burger" onClick={burgerClicked}><i class="fas fa-bars"></i></div>
+                <nav className={activeNavbar}>
+                    <div className="close" onClick={closeClicked}><i class="fas fa-times"></i></div>
                     <div className="navLinks">
                     <a href="#" className="activeNavLink"> <img src="/images/Ellipse 1.svg" className="navBoxShadow" alt="" /> <img src="/images/activeNavLink.png" alt="" className="topnavbar" /> THE PROPHECY</a>
                     <a href="#">THE COLLECTION</a>
@@ -29,52 +39,6 @@ const Header = () => {
               
             </div>
         </div>
-
-
-
-       
-
-
-
-<div className="parent home">
-    <img src="/images/cover4.jpg" className="bg" alt="" />
-    <div className="child homeC">
-         <h1>A quality artwork collection An innovative crypto-gaming project A new NFT minting paradigm</h1>
-    </div>
-</div>
-               
-            
-
-
-
-
-<div className="parent information">
-<div className="child informationC">
-    <div className="inText">
-        <p> <span>Episode 0 : The Prophecy <img src="/images/topsmall1.png" alt="" /></span><br /><br />
-
-There will come a day
-When darkness finds a clearway
-When the stars start to shiver
-When the earth will quiver
-That day no one will be safe
-For the wars will erupt everywhere
-That day, the prince, just like the waif
-Will see the abyss of despair
-9999 warriors, chosen long before
-Will stand as one at hell's door
-For different reasons and from different routes
-Some for glory, some for family, and some just for loots
-A war of unknown consequences, it is your destiny
-Gather your strength, your wit and your pride
-Your first labor is to outsmart your enemy,
-Decypher their locks, open their gates wide
-Enter their realm ..</p>
-    </div>
-</div>
-</div>
-
-
 
 
 
