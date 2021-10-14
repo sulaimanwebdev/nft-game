@@ -21,7 +21,7 @@ const Home = () => {
 <div className="parent information">
     <img src="images/topTexture.png" alt="" className="topTexture"/>
     <img src="images/bottomTexture.png" alt="" className="bottomTexture"/>
-    <div className="title"><h3>Episode 0 : The Prophecy</h3><img src="images/underline.png" alt="" /></div>
+    <div className="title infTItle"><h3>Episode 0 : The Prophecy</h3><img src="images/underline.png" alt="" /></div>
 
 <div className="child informationC">
 <img src="/images/bbb.png" alt="" className="transparent"/>

@@ -982,10 +982,40 @@ font-size: 17px;
   padding-top: 30px;
 }
 
+
 }
 
 @media (max-width:432px){
   .title h3{
-    font-size: 45px;
+    font-size: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+
   }
+
+.bigTextCont{
+  font-size:50px;
+  padding-top: 15px;
+  
+
 }
+
+
+.mintInnerCont h4{
+  color: white;
+  font-size: 28px;
+  letter-spacing: 4px;
+  width: 100%;
+  }
+  
+
+.roadmap{
+  margin-bottom: 100px;
+}
+
+.infTItle h3{
+  font-size: 35px !important;
+}
+
+}
+
