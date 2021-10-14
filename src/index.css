@@ -384,7 +384,7 @@ height: 20px;
 
 
 .roadmap{
-  background-color: #0D0E1B;;
+  background-color: #0D0E1B;
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -906,7 +906,7 @@ font-size: 17px;
 @media (max-width:550px){
   .home{
     height: initial;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     padding-top: 0;
   }
 }
@@ -929,16 +929,63 @@ font-size: 17px;
     font-size: 45px;
     margin-bottom: 0px !important;
   }
+ 
 }
 
 @media (max-width:503px){
 
 .homeC h1{
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
   letter-spacing: 4px;
   padding-top: 160px;
 
 }
 
+}
+
+
+
+@media (max-width:700px){
+  .information .title{
+    margin-bottom: 60px;
+  }
+  
+
+.concept p{
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 4px;
+
+
+
+}
+
+.roadmap{
+  padding-bottom: 100px;
+
+
+}
+
+
+
+.bigTextCont{
+  font-size:70px;
+  color: white;
+  letter-spacing: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto !important;
+  padding-top: 30px;
+}
+
+}
+
+@media (max-width:432px){
+  .title h3{
+    font-size: 45px;
+  }
 }
