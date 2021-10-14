@@ -404,7 +404,7 @@ height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 
 
@@ -908,4 +908,8 @@ font-size: 17px;
 
 .rrr{
   display: none;
+}
+
+.roadmap .title{
+  padding-top: 60px;
 }
