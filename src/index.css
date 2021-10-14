@@ -814,7 +814,6 @@ border: none;
   position: relative;
 }
 
-
 .collectionMint{
   position: absolute;
   width: 100%;
@@ -825,7 +824,17 @@ border: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.144);
+  background-color: rgba(0, 0, 0, 0.37);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.collectionCont:hover .collectionMint{
+  opacity: 1;
+  visibility: visible;
 }
 
 
@@ -912,4 +921,12 @@ font-size: 17px;
 
 .roadmap .title{
   padding-top: 60px;
+}
+
+
+@media (max-width:464px){
+  .information .title h3{
+    font-size: 45px;
+    margin-bottom: 0px !important;
+  }
 }
